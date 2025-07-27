@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relay - Stay Cozy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="relay.css" />
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Top Promotional Banner Start -->
+    <div class="promo-banner">
+      <div class="promo-content">
+        <button class="arrow-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div style="font-weight: 500">
+          Get 10% off your first order over $75
+        </div>
+
+        <button class="arrow-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Top Promotional Banner End-->
+
+    <!-- Main Navigation Start-->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <!-- Desktop: Logo left, menu center, icons right -->
+        <div class="logo nav-logo-left">relay</div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#" class="sale-link">Sale</a></li>
+        </ul>
+        <div class="nav-icons nav-icons-desktop nav-icons-right">
+          <a href="#" class="icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="icon-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="icon-btn" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#" class="icon-btn" aria-label="User"><i class="fas fa-user"></i></a>
+          <a href="#" class="icon-btn" aria-label="Search"><i class="fas fa-search"></i></a>
+          <a href="#" class="icon-btn" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- Mobile: Left (menu/search), Center (logo), Right (user/cart) -->
+        <div class="nav-left">
+          <button class="icon-btn" id="mobile-menu-btn" aria-label="Open menu">
+            <i class="fas fa-bars" style="font-size: 24px;"></i>
+          </button>
+          <a href="#" class="icon-btn nav-search-mobile" aria-label="Search"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="nav-logo-mobile nav-center">relay</div>
+        <div class="nav-right">
+          <a href="#" class="icon-btn nav-user-mobile" aria-label="User"><i class="fas fa-user"></i></a>
+          <a href="#" class="icon-btn nav-cart-mobile" aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Navigation End-->
+
+    <!-- Hero Section start -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div style="max-width: 600px">
+          <h1 class="hero-title">Stay Cozy</h1>
+          <p class="hero-subtitle">Comfy styles have just arrived</p>
+          <div class="hero-buttons">
+            <button class="btn-primary">
+              Shop Collection
+              <span
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 28px;
+                  height: 28px;
+                  background: #faf6ee;
+                  border-radius: 50%;
+                  margin-left: 6px;
+                "
+              >
+                <svg
+                  <i class="fas fa-arrow-right"></i>
+              </span>
+            </button>
+            <button class="btn-secondary">Shop The Sale</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Marquee Section start -->
+    <div
+      style="
+        background: #faf3e8;
+        padding: 2rem 0;
+        overflow: hidden;
+        white-space: nowrap;
+      "
+    >
+      <div
+        id="marquee-wrapper"
+        style="width: 100%; overflow: hidden; position: relative"
+      >
+        <div
+          id="marquee-content"
+          style="
+            display: flex;
+            width: max-content;
+            animation: marquee 19s linear infinite;
+            font-size: 2rem;
+            font-family: Georgia, serif;
+            color: #222;
+          "
+        >
+          <!-- Marquee content block (duplicated for seamless loop) -->
+          <div class="marquee-block" style="display: flex">
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Joy</span
+            >
+            <span
+              style="margin-right: 1.5rem;"
+            >
+              <i class="fas fa-face-smile" style="font-size: 2rem; color: #111;"></i>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Play</span
+            >
+            <span
+              style="margin-right: 1.5rem;"
+            >
+              <i class="fas fa-child" style="font-size: 2rem; color: #111;"></i>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Curiosity</span
+            >
+            <span
+              style="margin-right: 1.5rem;"
+            >
+              <i class="fas fa-magnifying-glass" style="font-size: 2rem; color: #111;"></i>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Joy</span
+            >
+            <span
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 1.5rem;
+              "
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 36C27.2843 36 34 29.2843 34 21C34 12.7157 27.2843 6 19 6C10.7157 6 4 12.7157 4 21C4 29.2843 10.7157 36 19 36Z"
+                  fill="#111"
+                />
+                <ellipse cx="13.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <ellipse cx="24.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <rect x="17" y="27" width="4" height="2" rx="1" fill="white" />
+              </svg>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Play</span
+            >
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee-block" style="display: flex">
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Joy</span
+            >
+            <span
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 1.5rem;
+              "
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 36C27.2843 36 34 29.2843 34 21C34 12.7157 27.2843 6 19 6C10.7157 6 4 12.7157 4 21C4 29.2843 10.7157 36 19 36Z"
+                  fill="#111"
+                />
+                <ellipse cx="13.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <ellipse cx="24.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <rect x="17" y="27" width="4" height="2" rx="1" fill="white" />
+              </svg>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Play</span
+            >
+            <span
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 1.5rem;
+              "
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <ellipse cx="19" cy="19" rx="15" ry="15" fill="#111" />
+                <ellipse cx="13.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <ellipse cx="24.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <rect x="17" y="27" width="4" height="2" rx="1" fill="white" />
+              </svg>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Curiosity</span
+            >
+            <span
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 1.5rem;
+              "
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="19" cy="19" r="15" fill="#111" />
+                <path
+                  d="M19 10C23.4183 10 27 13.5817 27 18C27 22.4183 23.4183 26 19 26C14.5817 26 11 22.4183 11 18"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <circle cx="19" cy="18" r="3" fill="white" />
+              </svg>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Joy</span
+            >
+            <span
+              style="
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 1.5rem;
+              "
+            >
+              <svg
+                width="38"
+                height="38"
+                viewBox="0 0 38 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 36C27.2843 36 34 29.2843 34 21C34 12.7157 27.2843 6 19 6C10.7157 6 4 12.7157 4 21C4 29.2843 10.7157 36 19 36Z"
+                  fill="#111"
+                />
+                <ellipse cx="13.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <ellipse cx="24.5" cy="19.5" rx="2.5" ry="3.5" fill="white" />
+                <rect x="17" y="27" width="4" height="2" rx="1" fill="white" />
+              </svg>
+            </span>
+            <span style="font-weight: bold; margin-right: 1.5rem"
+              >Inspired by Play</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Marquee Section End -->
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="category-container">
+        <button class="category-btn bottoms">Bottoms</button>
+        <button class="category-btn tops">Tops</button>
+        <button class="category-btn dresses">Dresses</button>
+        <button class="category-btn sweaters">Sweaters</button>
+        <button class="category-btn outerwear">Outerwear</button>
+        <button class="category-btn accessories">Accessories</button>
+      </div>
+    </section>
+    <!-- Category Section End -->
+
+    <!-- Featured Categories Section -->
+    <section class="featured-categories">
+      <div class="featured-grid">
+        <div
+          class="featured-item"
+          style="
+            background-image: url('https://images.pexels.com/photos/1068205/pexels-photo-1068205.jpeg');
+          "
+        >
+          <div class="featured-overlay"></div>
+          <div class="featured-content">
+            <h2 class="featured-title">Toddlers</h2>
+            <button class="featured-btn">Shop Now</button>
+          </div>
+        </div>
+        <div
+          class="featured-item"
+          style="
+            background-image: url('https://images.pexels.com/photos/5960678/pexels-photo-5960678.jpeg');
+          "
+        >
+          <div class="featured-overlay"></div>
+          <div class="featured-content">
+            <h2 class="featured-title">Big</h2>
+            <button class="featured-btn">Shop Now</button>
+          </div>
+        </div>
+        <div
+          class="featured-item"
+          style="
+            background-image: url('https://images.pexels.com/photos/4720404/pexels-photo-4720404.jpeg');
+          "
+        >
+          <div class="featured-overlay"></div>
+          <div class="featured-content">
+            <h2 class="featured-title">All</h2>
+            <button class="featured-btn">Shop Now</button>
+          </div>
+        </div>
+        <div
+          class="featured-item"
+          style="
+            background-image: url('https://images.pexels.com/photos/4048683/pexels-photo-4048683.jpeg');
+          "
+        >
+          <div class="featured-overlay"></div>
+          <div class="featured-content">
+            <h2 class="featured-title">Sale</h2>
+            <button class="featured-btn">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Carousel Section -->
+    <section
+      class="best-sellers-section"
+      style="background: #fdf5ec; padding: 2.5rem 0 0 0"
+    >
+      <div style="max-width: 1600px; margin: 0 auto; padding: 0 2rem">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <h2
+              style="
+                font-family: Georgia, serif;
+                font-size: 2.3rem;
+                font-weight: bold;
+                margin-bottom: 0.2rem;
+                color: #222;
+              "
+            >
+              Best Sellers
+            </h2>
+            <div style="color: #222; font-size: 1rem; opacity: 0.8">
+              Our most popular styles right now that your little one will love.
+            </div>
+          </div>
+          <button
+            style="
+              background: #111;
+              color: #fff;
+              border: none;
+              border-radius: 30px;
+              padding: 0.7rem 2.2rem;
+              font-size: 1rem;
+              font-weight: 600;
+              cursor: pointer;
+              letter-spacing: 1px;
+            "
+          >
+            SHOP ALL BESTSELLERS &rarr;
+          </button>
+        </div>
+        <div
+          id="best-sellers-carousel"
+          class="best-sellers-carousel"
+          style="
+            display: flex;
+            gap: 2.5rem;
+            overflow-x: auto;
+            padding: 2.5rem 0 1.5rem 0;
+            scrollbar-width: none;
+          "
+        >
+          <!-- JS will render cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- marquee section -->
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+      </div>
+      <div class="marquee-content">
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+        <span>·</span>
+        <span>Loved by both kiddos & parents</span>
+      </div>
+    </div>
+
+    <!-- Video Background Section Start -->
+    <section class="">
+      <div
+        class="featured-item"
+        style="position: relative; min-height: 500px; background: #000"
+      >
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          "
+        >
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+            type="video/mp4"
+          />
+        </video>
+        <div class="featured-overlay"></div>
+        <div
+          class="featured-content"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            pointer-events: none;
+          "
+        >
+          <h2
+            style="
+              font-size: 4rem;
+              font-family: Georgia, serif;
+              font-weight: 700;
+              margin-bottom: 0.5rem;
+              text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+            "
+          >
+            Fall Classics
+          </h2>
+          <div
+            style="
+              font-size: 1rem;
+              font-weight: 400;
+              margin-bottom: 2.2rem;
+              text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+            "
+          >
+            Our latest release is here
+          </div>
+          <button
+            style="
+              background: #fff;
+              color: #222;
+              border: none;
+              border-radius: 30px;
+              padding: 0.9rem 2.5rem;
+              font-size: 1.1rem;
+              font-weight: 600;
+              cursor: pointer;
+              letter-spacing: 1px;
+              pointer-events: auto;
+              transition: background 0.2s;
+            "
+          >
+            VIEW COLLECTION &rarr;
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Video Background Section End -->
+
+    <!-- another section - title : Perfect for play  start -->
+    <section class="perfectPlaySection">
+      <div class="perfectPlaySection__content">
+        <div class="perfectPlaySection__text">
+          <h1>Perfect for play</h1>
+          <p>Keep the adventure going</p>
+          <button class="btn-shop">SHOP NOW →</button>
+        </div>
+        <div class="perfectPlaySection__productCard">
+          <div class="productCard__image">
+            <img
+              src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/cord-overalls-1.jpg?v=1749505487&width=3000"
+              alt="coral"
+            />
+          </div>
+          <div class="productCard__info">
+            <h3>Cord Overalls</h3>
+            <p class="price">$115.00</p>
+            <p class="desc">
+              Our bestselling overalls and jumpsuits are back in stock!
+            </p>
+          </div>
+          <div class="productCard__icon">
+            <!-- Lock icon -->
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="#231f20"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- another section - title : Perfect for play  end -->
+
+    <!-- designed section -->
+    <section class="designedSection">
+      <header class="designedSection-header">
+        <h2>Designed by parents for kiddos</h2>
+        <nav class="designedSection-nav">
+          <a href="#">PANTS, SKIRTS & SHORTS</a>
+          <a href="#">KNITS & SWEATERS</a>
+        </nav>
+      </header>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Featured Item -->
+          <div class="carousel-item featured">
+            <div class="carousel-item-content">
+              <img
+                src="https://img.ltwebstatic.com/images3_spmp/2024/10/08/a9/1728353267b188e527539c8d9e532739db8367a91a_thumbnail_405x552.jpg"
+                alt="Boy wearing sweater and pants"
+              />
+              <button class="view-products-btn">VIEW PRODUCTS</button>
+            </div>
+          </div>
+
+          <!-- Carousel Items -->
+          <div class="carousel-item">
+            <div class="carousel-item-content">
+              <img
+                src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC505_F23-W2026_02_Front_1000x_61f7452b-3e49-44c0-912a-084e4cfe303d.jpg?v=1749506012&width=3000"
+                alt="Drawstring Cords"
+              />
+              <div class="carousel-item-details">
+                <h3>Drawstring Cords</h3>
+                <p>$100.00</p>
+                <span class="colors">2 colors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-item-content">
+              <img
+                src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC492_F23-K3035_02_Front_1000x_e3c0a3a6-a2bf-48b0-8456-dfef08db3c58.jpg?v=1749506008&width=3000"
+                alt="Velvet Skirt"
+              />
+              <div class="carousel-item-details">
+                <h3>Velvet Skirt</h3>
+                <p>$95.00</p>
+                <span class="colors">2 colors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-item-content">
+              <img
+                src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC473_F23-K2023_01_Front_1000x_c8e69a3f-2910-4f62-9c3e-47cfa078db1b.jpg?v=1749506005&width=3000"
+                alt="Another Item"
+              />
+              <div class="carousel-item-details">
+                <h3>Ribbed Knit Sweater</h3>
+                <p>$80.00</p>
+                <span class="colors">3 colors</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate items for infinite scroll effect (add more as needed) -->
+          <div class="carousel-item">
+            <div class="carousel-item-content">
+              <img
+                src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC505_F23-W2026_02_Front_1000x_61f7452b-3e49-44c0-912a-084e4cfe303d.jpg?v=1749506012&width=3000"
+                alt="Drawstring Cords (duplicate)"
+              />
+              <div class="carousel-item-details">
+                <h3>Drawstring Cords</h3>
+                <p>$100.00</p>
+                <span class="colors">2 colors</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-content">
+              <img
+                src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC505_F23-W2026_02_Front_1000x_61f7452b-3e49-44c0-912a-084e4cfe303d.jpg?v=1749506012&width=3000"
+                alt="Drawstring Cords (duplicate)"
+              />
+              <div class="carousel-item-details">
+                <h3>Drawstring Cords</h3>
+                <p>$100.00</p>
+                <span class="colors">2 colors</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button> -->
+        <button class="carousel-button next" onclick="moveCarousel(1)">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review-section">
+      <div class="review-header">
+        <h1>We're inspired by adventure.</h1>
+      </div>
+      <div class="review-content">
+        <div class="review-card">
+          <img
+            style="width: 400px"
+            src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/lacey-collar-2.jpg?v=1749505837&width=480"
+            alt="Child with curly hair"
+            class="review-image"
+          />
+          <div class="review-text-container">
+            <span class="quote-icon large-quote top-left">“</span>
+            <p class="review-text">
+              This brand has easily become one of my favorite places to order
+              clothing for my children! I've loved every single thing I've
+              purchased!
+            </p>
+            <p class="reviewer-name">Cora T.</p>
+            <span class="quote-icon large-quote bottom-right">”</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <img
+            style="width: 400px"
+            src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/Screen-Shot-2023-02-09-at-11.38.29-AM.png?v=1749506116&width=480"
+            alt="Child eating watermelon"
+            class="review-image"
+          />
+          <div class="review-text-container">
+            <span class="quote-icon large-quote top-left">“</span>
+            <p class="review-text">
+              I was very pleased with everything about my purchase. The
+              tailoring, the fabric, the color. I'll definitely be purchasing
+              from here again.
+            </p>
+            <p class="reviewer-name">Ari R.</p>
+            <span class="quote-icon large-quote bottom-right">”</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+
+    <!-- New Arrivals Section Start -->
+    <section
+      class="newArrivalSection"
+      style="background: #faf6ee; padding: 60px 0; margin: 0 2rem"
+    >
+      <div
+        style="
+          margin: 0 auto;
+          display: flex;
+          gap: 40px;
+          align-items: stretch;
+          flex-wrap: wrap;
+        "
+      >
+        <!-- Left: Product Grid -->
+        <div
+          style="
+            flex: 2 1 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            min-width: 340px;
+          "
+        >
+          <!-- Product 1 -->
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img
+              src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC475_F23-K4010_01_Front_1000x_62e69962-c5ad-463f-8603-06d195e2bb2c.jpg?v=1749506035&width=3000"
+              alt="Speckled Dress"
+              style="
+                width: 100%;
+                max-width: 320px;
+                object-fit: contain;
+                margin-bottom: 24px;
+                background: #f5ecd9;
+                border-radius: 0;
+              "
+            />
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 1.1em;
+                  color: #222;
+                  font-weight: 700;
+                  margin-bottom: 4px;
+                "
+              >
+                Speckled Dress
+              </div>
+              <div style="font-size: 1em; color: #222; margin-bottom: 2px">
+                $120.00
+              </div>
+              <div style="font-size: 0.95em; color: #888; font-style: italic">
+                1 color
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img
+              src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC469_F23-K1051_01_Front_1000x_ed2d1e0b-e43b-42cb-b299-b868b59fe871.jpg?v=1749505995&width=3000"
+              alt="Classic Turtleneck"
+              style="
+                width: 100%;
+                max-width: 320px;
+                object-fit: contain;
+                margin-bottom: 24px;
+                background: #f5ecd9;
+                border-radius: 0;
+              "
+            />
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 1.1em;
+                  color: #222;
+                  font-weight: 700;
+                  margin-bottom: 4px;
+                "
+              >
+                Classic Turtleneck
+              </div>
+              <div style="font-size: 1em; color: #222; margin-bottom: 2px">
+                $80.00
+              </div>
+              <div style="font-size: 0.95em; color: #888; font-style: italic">
+                3 colors
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img
+              src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC531_F23-K12004_01_Front_1000x_f687c357-dc8c-4e5c-97d7-76e2caed058f.jpg?v=1749506039&width=3000"
+              alt="Ribbed Sweater"
+              style="
+                width: 100%;
+                max-width: 320px;
+                object-fit: contain;
+                margin-bottom: 24px;
+                background: #f5ecd9;
+                border-radius: 0;
+              "
+            />
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 1.1em;
+                  color: #222;
+                  font-weight: 700;
+                  margin-bottom: 4px;
+                "
+              >
+                Ribbed Sweater
+              </div>
+              <div style="font-size: 1em; color: #222; margin-bottom: 2px">
+                $95.00
+              </div>
+              <div style="font-size: 0.95em; color: #888; font-style: italic">
+                2 colors
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <img
+              src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/cozy-socks-1.jpg?v=1749505818&width=3000"
+              alt="Cozy Socks"
+              style="
+                width: 100%;
+                max-width: 320px;
+                object-fit: contain;
+                margin-bottom: 24px;
+                background: #f5ecd9;
+                border-radius: 0;
+              "
+            />
+            <div style="text-align: center">
+              <div
+                style="
+                  font-size: 1.1em;
+                  color: #222;
+                  font-weight: 700;
+                  margin-bottom: 4px;
+                "
+              >
+                Cozy Socks
+              </div>
+              <div style="font-size: 1em; color: #222; margin-bottom: 2px">
+                $18.00
+              </div>
+              <div style="font-size: 0.95em; color: #888; font-style: italic">
+                4 colors
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Feature Image and Text -->
+        <div
+          style="
+            flex: 1 1 340px;
+            display: flex;
+            flex-direction: column;
+            min-width: 340px;
+            position: relative;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              width: 100%;
+              max-width: 686px;
+              min-height: 600px;
+            "
+          >
+            <img
+              src="https://images.pexels.com/photos/17839286/pexels-photo-17839286.jpeg"
+              alt="New Arrivals Model"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0;
+                display: block;
+              "
+            />
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                z-index: 2;
+                padding: 0 2rem;
+              "
+            >
+              <h2
+                style="
+                  font-size: 1.8em;
+                  font-weight: 700;
+                  color: #fff;
+                  margin: 0 0 18px 0;
+                  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+                "
+              >
+                Take a peek at our new arrivals
+              </h2>
+              <button
+                style="
+                  background: #fff;
+                  color: #222;
+                  padding: 14px 32px;
+                  border: none;
+                  border-radius: 30px;
+                  font-size: 1.1em;
+                  font-weight: 600;
+                  cursor: pointer;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                  transition: background 0.2s;
+                "
+              >
+                SHOP NOW →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- New Arrivals Section End -->
+
+    <section
+      class="last-section"
+      style="background: #faf6ee; padding: 60px 0; margin: 0 2rem"
+    >
+      <div
+        style="
+          display: flex;
+          align-items: stretch;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
+        "
+      >
+        <!-- Left Image -->
+        <div
+          style="
+            flex: 1 1 0;
+            min-width: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/TSC122_SET-F_READING-NEWSPAPER_WALKING-DOG-STREETSIDE_N_A_04_1.jpg?v=1749506127&width=720"
+            alt="Left Visual"
+            style="
+              width: 480px;
+              height: 580px;
+              object-fit: cover;
+              border-radius: 0;
+              display: block;
+            "
+          />
+        </div>
+        <!-- Center Menu -->
+        <div
+          style="
+            flex: 0 1 340px;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <nav
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 32px;
+              align-items: center;
+            "
+          >
+            <a
+              href="#"
+              style="
+                font-family: 'Georgia', serif;
+                font-weight: 700;
+                font-size: 2.5rem;
+                color: #222;
+                text-decoration: none;
+                position: relative;
+              "
+              >New Arrivals<sup
+                style="font-size: 1rem; vertical-align: super; font-weight: 400"
+                >22</sup
+              ></a
+            >
+            <a
+              href="#"
+              style="
+                font-family: 'Georgia', serif;
+                font-weight: 700;
+                font-size: 2.2rem;
+                color: #222;
+                text-decoration: none;
+                position: relative;
+              "
+              >Bestsellers<sup
+                style="font-size: 1rem; vertical-align: super; font-weight: 400"
+                >15</sup
+              ></a
+            >
+            <a
+              href="#"
+              style="
+                font-family: 'Georgia', serif;
+                font-weight: 700;
+                font-size: 2.2rem;
+                color: #222;
+                text-decoration: none;
+                position: relative;
+              "
+              >Staff Picks<sup
+                style="font-size: 1rem; vertical-align: super; font-weight: 400"
+                >7</sup
+              ></a
+            >
+            <a
+              href="#"
+              style="
+                font-family: 'Georgia', serif;
+                font-weight: 700;
+                font-size: 2.2rem;
+                color: #222;
+                text-decoration: none;
+                position: relative;
+              "
+              >Clearance<sup
+                style="font-size: 1rem; vertical-align: super; font-weight: 400"
+                >51</sup
+              ></a
+            >
+            <a
+              href="#"
+              style="
+                font-family: 'Georgia', serif;
+                font-weight: 700;
+                font-size: 2.2rem;
+                color: #222;
+                text-decoration: none;
+                position: relative;
+              "
+              >Shop All</a
+            >
+          </nav>
+        </div>
+        <!-- Right Image -->
+        <div
+          style="
+            flex: 1 1 0;
+            min-width: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <img
+            src="https://broadcast-theme-relay.myshopify.com/cdn/shop/files/220621_CG_TSC_Scene_06_A_196_099_1_1600x_3e2ed1a1-064f-42fb-bfcb-0762b9b37aba.jpg?v=1749506113&width=720"
+            alt="Right Visual"
+            style="
+              width: 480px;
+              height: 580px;
+              object-fit: cover;
+              border-radius: 0;
+              display: block;
+            "
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer Marquee Section Start -->
+    <section class="footer-marquee-section">
+      <div class="footer-marquee-wrapper">
+        <div class="footer-marquee-logos" id="footerMarqueeLogos">
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+        </div>
+        <div class="footer-marquee-logos" aria-hidden="true">
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+          <span class="footer-logo parents">Parents</span>
+          <span class="footer-logo forbes">Forbes</span>
+          <span class="footer-logo sheknows">Sheknows</span>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Marquee Section End -->
+
+    <!-- Footer Section Start -->
+    <footer
+      class="main-footer"
+      style="background: #f7ddb9; color: #111; font-family: 'Georgia', serif"
+    >
+      <!-- Features Row -->
+      <div
+        class="footer-features"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          gap: 8vw;
+          padding: 60px 0 40px 0;
+          flex-wrap: wrap;
+          border-bottom: 1px dotted red;
+        "
+      >
+        <div
+          class="footer-feature"
+          style="text-align: center; min-width: 260px"
+        >
+          <div style="font-size: 3.2rem; margin-bottom: 10px">✌️</div>
+          <div style="font-size: 2rem; font-weight: 700; margin-bottom: 8px">
+            Made for Play
+          </div>
+          <div
+            style="
+              font-size: 1.1rem;
+              font-family: 'Inter', sans-serif;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            Comfy clothes that are durable
+          </div>
+        </div>
+        <div
+          class="footer-feature"
+          style="text-align: center; min-width: 260px"
+        >
+          <div style="font-size: 3.2rem; margin-bottom: 10px">☁️</div>
+          <div style="font-size: 2rem; font-weight: 700; margin-bottom: 8px">
+            Soft &amp; Stretchy
+          </div>
+          <div
+            style="
+              font-size: 1.1rem;
+              font-family: 'Inter', sans-serif;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            Easy and fun styles to wear
+          </div>
+        </div>
+        <div
+          class="footer-feature"
+          style="text-align: center; min-width: 260px"
+        >
+          <div style="font-size: 3.2rem; margin-bottom: 10px">✽</div>
+          <div style="font-size: 2rem; font-weight: 700; margin-bottom: 8px">
+            Sustainable Materials
+          </div>
+          <div
+            style="
+              font-size: 1.1rem;
+              font-family: 'Inter', sans-serif;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            Natural and breathable fabrics
+          </div>
+        </div>
+      </div>
+      <!-- Footer Main Row -->
+      <div
+        class="footer-main"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 48px 4vw 32px 4vw;
+          max-width: 1600px;
+          margin: 0 auto;
+          gap: 32px;
+        "
+      >
+        <div class="footer-col" style="flex: 1 1 200px; min-width: 200px">
+          <div style="font-size: 2.2rem; font-weight: 700; margin-bottom: 18px">
+            Company
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            Our story
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            The team
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            Blog
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            Theme features
+          </div>
+        </div>
+        <div class="footer-col" style="flex: 1 1 200px; min-width: 200px">
+          <div style="font-size: 2.2rem; font-weight: 700; margin-bottom: 18px">
+            Help
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            FAQ
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            Contact
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            Gift Cards
+          </div>
+        </div>
+        <div class="footer-col" style="flex: 1 1 200px; min-width: 200px">
+          <div style="font-size: 2.2rem; font-weight: 700; margin-bottom: 18px">
+            Contact
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            1234 Main St.
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 12px;
+            "
+          >
+            1-888-123-4567
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+            "
+          >
+            email@company.com
+          </div>
+        </div>
+        <div class="footer-col" style="flex: 1 1 200px; min-width: 200px">
+          <div style="font-size: 2.2rem; font-weight: 700; margin-bottom: 18px">
+            Thank you
+          </div>
+          <div
+            style="
+              font-family: 'Inter', sans-serif;
+              font-size: 1.1rem;
+              color: #222;
+              font-weight: 400;
+              margin-bottom: 18px;
+            "
+          >
+            All products in this store are for demo purposes only. They have
+            been generously provided by
+            <a href="#" style="color: #111; text-decoration: underline"
+              >The Sunday Collective</a
+            >.
+          </div>
+          <div style="display: flex; gap: 18px; margin-top: 12px">
+            <span style="font-size: 1.3rem; cursor: pointer">&#x1F426;</span>
+            <span style="font-size: 1.3rem; cursor: pointer">&#x1F4F7;</span>
+            <span style="font-size: 1.3rem; cursor: pointer">&#x1F3A4;</span>
+            <span style="font-size: 1.3rem; cursor: pointer">&#x1F3A8;</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Footer Logo Section Start -->
+    <section
+      class="footer-logo-section"
+      style="
+        background: #f7ddb9;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      "
+    >
+      <span
+        style="
+          font-family: 'Georgia', serif;
+          font-weight: 900;
+          font-size: 30vw;
+          color: #111;
+          line-height: 0.5;
+          letter-spacing: 3px;
+          display: block;
+          text-align: center;
+        "
+        >relay</span
+      >
+    </section>
+
+    <script src="relay.js"></script>
+  </body>
+</html>
