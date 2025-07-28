@@ -424,6 +424,9 @@ body {
 .category-section {
   padding-bottom: 2rem;
   padding-top: 1rem;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .category-container {
@@ -431,6 +434,8 @@ body {
   align-items: center;
   gap: 2rem;
   margin: 0 3.87rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .category-btn {
@@ -444,6 +449,9 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   color: #333;
+  flex: 1 1 auto;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .category-btn:hover {
@@ -1204,6 +1212,42 @@ body {
 
 
 /* responsive css goes here */
+/* Category Section Responsive Styles */
+@media (max-width: 1200px) {
+  .category-container {
+    gap: 1.5rem;
+    margin: 0 2rem;
+  }
+  .category-btn {
+    padding: 0.9rem 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-container {
+    gap: 1rem;
+    margin: 0 1.5rem;
+  }
+  .category-btn {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 150px;
+    font-size: 16px;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container {
+    gap: 0.8rem;
+    margin: 0 1rem;
+  }
+  .category-btn {
+    flex: 1 1 100%;
+    font-size: 14px;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
