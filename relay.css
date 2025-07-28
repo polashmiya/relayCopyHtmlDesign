@@ -494,6 +494,32 @@ body {
   animation: scroll 15s linear infinite;
 }
 
+/* Keyframes for marquee animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Pause animation on hover for all marquee sections */
+.marquee:hover .marquee-content,
+.footer-marquee-section:hover .footer-marquee-logos,
+#marquee-wrapper:hover #marquee-content {
+  animation-play-state: paused;
+}
+
 .marquee-content span {
   color: white;
   font-weight: bold;
@@ -501,7 +527,54 @@ body {
   margin: 0 15px;
 }
 
+/* Custom Marquee Styles */
+.top-marquee {
+  background: #faf3e8;
+  padding: 2rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content-custom {
+  display: flex;
+  width: max-content;
+  animation: marquee 19s linear infinite;
+  font-size: 2rem;
+  font-family: Georgia, serif;
+  color: #222;
+}
+
+.marquee-block {
+  display: flex;
+  align-items: center;
+}
+
+.marquee-text {
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+
+.marquee-icon {
+  margin-right: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.marquee-fa-icon {
+  font-size: 2rem;
+  color: #111;
+}
+
+.marquee-svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* another perfect paly section css */
 .perfectPlaySection {
